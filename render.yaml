@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: karyadesk-backend
+    runtime: node
+    rootDir: backend
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "*"
+      # For Render Persistent Disk (Starter plan or above):
+      # - key: DB_PATH
+      #   value: /var/data/karyadesk.db
+    # Uncomment below if you upgrade to Starter plan ($7/mo) with a persistent disk:
+    # disk:
+    #   name: karyadesk-data
+    #   mountPath: /var/data
+    #   sizeGB: 1
