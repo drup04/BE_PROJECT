@@ -1,0 +1,31 @@
+{
+  "name": "karyadesk-backend",
+  "version": "1.0.0",
+  "description": "Deterministic MSME Agentic AI Backend API for Sahyadri Precision Works, ready for Render deployment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node tests/api.test.js",
+    "build": "echo \"Build completed\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "msme",
+    "agentic-ai",
+    "operations",
+    "render",
+    "express",
+    "sqlite"
+  ],
+  "author": "Sahyadri Precision Works",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}

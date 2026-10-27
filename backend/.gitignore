@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SQLite Database local files (auto-generated on startup)
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Operating System files
+.DS_Store
+Thumbs.db
